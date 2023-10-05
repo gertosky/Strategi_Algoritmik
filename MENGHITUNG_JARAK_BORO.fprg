@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-05 06:43:21 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtNFBDTkdISzsyMDIzLTEwLTA1OzA2OjQxOjI4IFBNOzI4MjM="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtNFBDTkdISzsyMDIzLTEwLTA1OzA2OjQxOjMzIFBNOzE7TEVOT1ZPO0RFU0tUT1AtNFBDTkdISzsyMDIzLTEwLTA1OzA2OjM4OjI3IFBNO01FTkdISVRVTkcgSkFSQUsgQk9STy5mcHJnOzc4Mzk="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtNFBDTkdISzsyMDIzLTEwLTA1OzA2OjQzOjIxIFBNOzE7MjkyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sudut" type="Real" array="False" size=""/>
+            <declare name="Kecepatan" type="Real" array="False" size=""/>
+            <declare name="SinA" type="Real" array="False" size=""/>
+            <declare name="Jarak" type="Real" array="False" size=""/>
+            <input variable="Sudut"/>
+            <input variable="Kecepatan"/>
+            <assign variable="SinA" expression="sin(2 * Sudut * 3.141 / 180)*10"/>
+            <assign variable="Jarak" expression="(Kecepatan * SinA) / 10"/>
+            <output expression="Jarak" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

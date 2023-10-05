@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-05 06:52:14 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtNFBDTkdISzsyMDIzLTEwLTA1OzA2OjQ4OjA5IFBNOzI4Mjk="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtNFBDTkdISzsyMDIzLTEwLTA1OzA2OjUyOjE0IFBNOzE7MjkyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sudut" type="Integer" array="False" size=""/>
+            <declare name="Kecepatan" type="Real" array="False" size=""/>
+            <declare name="SinA" type="Real" array="False" size=""/>
+            <declare name="Waktu" type="Real" array="False" size=""/>
+            <input variable="Sudut"/>
+            <input variable="Kecepatan"/>
+            <assign variable="SinA" expression="sin(Sudut * 22 / 7 / 180)"/>
+            <assign variable="Waktu" expression="(2 * (Kecepatan * SinA)) / 10"/>
+            <output expression="Waktu" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
